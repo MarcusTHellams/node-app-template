@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "build": "node scripts/build.js",
+    "build": "tsc --project tsconfig.build.json",
     "prebuild": "rimraf dist",
+    "build:bundle": "node scripts/build.js",
+    "prebuild:bundle": "rimraf dist",
     "start": "ts-node src/index.ts",
     "start:dev": "tsc-watch --onSuccess \"ts-node src/index.ts\"",
     "start:debug": "tsc-watch --onSuccess \"node --inspect -r ts-node/register src/index.ts\"",
