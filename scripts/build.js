@@ -3,7 +3,7 @@ require('esbuild').buildSync({
   bundle: true,
   platform: 'node',
   target: ['node16'],
-  outdir: 'dist',
+  outdir: 'build',
   sourcemap: true,
   format: 'cjs',
   minify: true,
