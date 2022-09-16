@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "es2021": true,
     "node": true
@@ -17,7 +18,8 @@
     "@typescript-eslint",
     "simple-import-sort",
     "import",
-    "sort-destructure-keys"
+    "sort-destructure-keys",
+    "prettier"
   ],
   "rules": {
     "indent": ["error", 2],
@@ -31,7 +33,7 @@
     "import/no-duplicates": "error",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
-      "error",
+      "warn",
       {
         "vars": "all",
         "args": "after-used",
