@@ -1,4 +1,3 @@
-console.log('Hello Marcus');
-console.log('Hello World');
+console.log('hello World');
 
 export {};
